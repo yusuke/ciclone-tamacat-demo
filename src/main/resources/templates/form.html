@@ -5,16 +5,15 @@
     <title></title>
 </head>
 <body>
-<img src="./working.gif" alt="It's working">
 <form id="personForm" action="#" th:action="@{/}" th:object="${personForm}" method="post">
     <table>
         <tr>
-            <td><label for="name">Name:</label></td>
+            <td><label for="name">お名前:</label></td>
             <td><input type="text" id="name" th:field="*{name}"/></td>
             <td th:if="${#fields.hasErrors('name')}" id="nameError" th:errors="*{name}">Name Error</td>
         </tr>
         <tr>
-            <td><label for="age">Age:</label></td>
+            <td><label for="age">年齢:</label></td>
             <td><input type="text" id="age" th:field="*{age}"/></td>
             <td th:if="${#fields.hasErrors('age')}" id="ageError" th:errors="*{age}">Age Error</td>
         </tr>
@@ -25,5 +24,7 @@
         </tr>
     </table>
 </form>
+<img src="./working.gif" alt="It's working">
+
 </body>
 </html>
