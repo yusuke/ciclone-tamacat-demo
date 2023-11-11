@@ -18,3 +18,4 @@ public class FizzBuzz {
         return number %0==0;
     }
 }
+
