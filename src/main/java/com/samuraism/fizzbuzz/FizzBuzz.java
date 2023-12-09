@@ -1,24 +1,26 @@
 package com.samuraism.fizzbuzz;
 
 public class FizzBuzz {
+    private static final int MAX_NUMBER = 100;
+
     public static void main(String[] args) {
-        int a = 100;
-        String[] results = new String[a];
-        for (int i = 0; i < a; i++) {
-            var result = "";
-            if (i % 3 == 0) {
-                result += "Fizz";
-            }
-            if (i % 5 == 0) {
-                result += "Buzz";
-            }
-            if (i % 3 != 0 && i % 5 != 0) {
-                result += i;
-            }
-            results[i] = result;
+        for (int i = 0; i < MAX_NUMBER; i++) {
+            System.out.println(calculateFizzBuzz(i));
         }
-        for (int i = 0; i < 100; i++) {
-            System.out.println(results[i]);
+    }
+
+    private static String calculateFizzBuzz(int number) {
+        var divisibleBy3 = number % 3 == 0;
+        var divisibleBy5 = number % 5 == 0;
+
+        if (divisibleBy3 && divisibleBy5) {
+            return "FizzBuzz";
+        } else if (divisibleBy3) {
+            return "Fizz";
+        } else if (divisibleBy5) {
+            return "Buzz";
+        } else {
+            return Integer.toString(number);
         }
     }
 }
