@@ -5,7 +5,7 @@ public class FizzBuzz {
 
     public static void main(String[] args) {
         for (int i = 0; i < MAX_NUMBER; i++) {
-            System.out.println(calculateFizzBuzz(i));
+            System.out.printf(calculateFizzBuzz(i) + "\n");
         }
     }
 
