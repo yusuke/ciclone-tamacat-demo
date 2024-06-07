@@ -13,6 +13,7 @@ public class FizzBuzz {
         }
         return result;
     }
+
     private static boolean canBeDividedByThree(int number){
         new Throwable().printStackTrace();
         return number %0==0;
