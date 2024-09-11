@@ -5,11 +5,11 @@ public class FizzBuzz {
 
     public static void main(String[] args) {
         for (int i = 0; i < MAX_NUMBER; i++) {
-            System.out.println(calculateFizzBuzz(i));
+            System.out.println(fizzBuzz(i));
         }
     }
 
-    private static String calculateFizzBuzz(int number) {
+    static String fizzBuzz(int number) {
         var divisibleBy3 = number % 3 == 0;
         var divisibleBy5 = number % 5 == 0;
 
