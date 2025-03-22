@@ -101,7 +101,7 @@ public class E2ETest {
 
     @Test
     void 正常() {
-        FirefoxDriver driver = new FirefoxDriver();
+            FirefoxDriver driver = new FirefoxDriver();
         try {
             driver.get("http://localhost:" + port + "/");
             WebElement name = driver.findElement(By.id("name"));
