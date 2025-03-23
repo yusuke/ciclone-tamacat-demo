@@ -22,7 +22,6 @@ public class E2ETest {
     private int port;
 
 
-
     @Test
     void 名前が長すぎ() {
         FirefoxDriver driver = new FirefoxDriver();
@@ -103,7 +102,7 @@ public class E2ETest {
 
     @Test
     void 正常() {
-            FirefoxDriver driver = new FirefoxDriver();
+        FirefoxDriver driver = new FirefoxDriver();
         try {
             driver.get("http://localhost:" + port + "/");
             WebElement name = driver.findElement(By.id("name"));
