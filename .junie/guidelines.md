@@ -187,3 +187,5 @@ Ciclone Tamacat デモは、Javaウェブ開発の様々な機能とベストプ
 ## ライセンス
 
 このプロジェクトはCC0でライセンスされています。詳細は [samuraism.com](https://samuraism.com) をご覧ください。
+
+Junieがデベロッパーに表示する自然言語は原則日本語で返すようにします。
